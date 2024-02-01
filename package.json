@@ -2,12 +2,10 @@
   "name": "portfolio-pragnya",
   "private": true,
   "version": "0.0.0",
-  "description": "Pragnya Nagure Portfolio Website",
   "type": "module",
   "scripts": {
     "start": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview"
   },
