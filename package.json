@@ -1,24 +1,16 @@
 {
   "name": "portfolio-pragnya",
-  "version": "1.0.0",
-  "description": "Your portfolio description",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pragnya Nagure Portfolio Website",
   "type": "module",
   "scripts": {
-    "start": "vite", 
-    "build": "vite build"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xxpsynagure/portfolio-pragnya.git" 
-  },
-  "keywords": ["portfolio", "react", "vite"],
-  "author": "Pragnya Nagure",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xxpsynagure/portfolio-pragnya/issues" 
-  },
-  "homepage": "https://xxpsynagure.github.io/portfolio-pragnya/", 
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -44,6 +36,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "sass": "^1.70.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
