@@ -1,14 +1,24 @@
 {
   "name": "portfolio-pragnya",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Your portfolio description",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "start": "vite", 
+    "build": "vite build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxpsynagure/portfolio-pragnya.git" 
+  },
+  "keywords": ["portfolio", "react", "vite"],
+  "author": "Pragnya Nagure",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xxpsynagure/portfolio-pragnya/issues" 
+  },
+  "homepage": "https://xxpsynagure.github.io/portfolio-pragnya/", 
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
@@ -37,5 +47,9 @@
     "sass": "^1.70.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
